@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>EIN Service - Home</title>
+    </head>
+    <body>
+
+
+        <header class="bg-light py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="logo mb-0"><a href="index.html"><img src="images/logo.png" class="img-fluid"></a></h1>
+                    </div>
+                    <div class="col-6">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="services.html">All Services</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="ein-service.html">EIN Service</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="page-banner banner-style2" style="background-image: url(images/banner22.jpg)">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <h1 class="text-light">Apply for your Federal Tax ID / EIN</h1>
+                        <p class="text-light">Obtain your Federal Tax ID / EIN with our simple online application</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="page-block mt-5">
+            <div class="container bg-light pb-4">
+                <div class="row">
+                    <div class="col-12 pt-4 text-center block--title mb-4">
+                        <h2 class="d-flex justify-content-center align-items-center">2020 Tax ID / SS-4 Form</h2>
+                    </div>
+
+                    <div class="col-12 block-desc px-5">
+                        <form novalidate id="application" class="form mt-4" method="post" action="">
+                            <input type="hidden" name="_token" value="wrJvCpqOKk9Ww8KO24wnk1xpqxHdy9whF4JUGzDI">
+                            <input type="hidden" name="entity" value="sole-proprietor">
+
+                            <div class="card mb-3">
+<!--                                <div class="card-header">Select Your Entity Type</div>-->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="select_entity_type" class="form-control-label">Select Your Entity Type</label>
+                                                <select required="" name="select_entity_type" id="select_entity_type" class="form-control input-lg">
+                                                    <option value="">Please Select</option>
+                                                    <option value="individual_sole_proprietor" selected="">Individual / Sole Proprietor</option>
+                                                    <option value="corporation_application">Corporation</option>
+                                                    <option value="limited_liability_company">Limited Liability Company</option>
+                                                    <option value="s_corporation">S-Corporation</option>
+                                                    <option value="estate_of_deceased_individual">Estate of Deceased Individual</option>
+                                                    <option value="personal_service_corporation">Personal Service Corporation</option>
+                                                    <option value="trust">Trust</option>
+                                                    <option value="church_organization">Church Organization</option>
+                                                    <option value="non_profit_organization">Non-Profit Organization</option>
+                                                    <option value="partnership">Partnership</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-header">Information</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="dba" class="form-control-label">Trade Name / DBA <small class="text-muted">Optional</small></label>
+                                                <input type="text" id="dba" name="dba" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-3">
+                                <div class="card-header">Enter your Personal Information</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="firstname" class="form-control-label">First Name</label>
+                                                <input type="text" id="firstname" name="firstname" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="middlename" class="form-control-label">Middle Name <small class="text-muted">Optional</small></label>
+                                                <input type="text" id="middlename" name="middlename" value="" class="form-control input-lg">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lastname" class="form-control-label">Last Name</label>
+                                                <input type="text" id="lastname" name="lastname" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ssn" class="form-control-label">Social Security Number</label>
+                                                <input type="tel" id="ssn" name="ssn" required value="" class="ssn form-control input-lg" placeholder="XXX-XX-XXXX" data-minlength="11">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="ssn_verify" class="form-control-label">Verify SSN</label>
+                                                <input type="tel" id="ssn_verify" name="ssn_verify" required value="" data-match="#ssn" class="ssn form-control input-lg" placeholder="XXX-XX-XXXX">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="title" class="form-control-label">Title</label>
+                                                <input type="text" id="title" name="title" value="" required class="form-control input-lg" placeholder="(eg Owner / Managing Member)" data-minlength="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-header">Business Address <small class="text-secondary">No P.O Boxes Allowed</small></div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="business_address" class="form-control-label">Address</label>
+                                                <input type="text" id="business_address" name="business_address" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="business_city" class="form-control-label">City</label>
+                                                <input type="text" id="business_city" name="business_city" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="business_state" class="form-control-label">State</label>
+                                                <select required name="business_state" id="business_state" class="form-control input-lg">
+                                                    <option value="" selected="selected">Select a State</option>
+                                                    <option value="AA" >Armed Forces Americas</option>
+                                                    <option value="AE" >Armed Forces Europe</option>
+                                                    <option value="AK" >Alaska</option>
+                                                    <option value="AL" >Alabama</option>
+                                                    <option value="AP" >Armed Forces Pacific</option>
+                                                    <option value="AR" >Arkansas</option>
+                                                    <option value="AS" >American Samoa</option>
+                                                    <option value="AZ" >Arizona</option>
+                                                    <option value="CA" >California</option>
+                                                    <option value="CO" >Colorado</option>
+                                                    <option value="CT" selected>Connecticut</option>
+                                                    <option value="DC" >District of Columbia</option>
+                                                    <option value="DE" >Delaware</option>
+                                                    <option value="FL" >Florida</option>
+                                                    <option value="GA" >Georgia</option>
+                                                    <option value="GU" >Guam</option>
+                                                    <option value="HI" >Hawaii</option>
+                                                    <option value="IA" >Iowa</option>
+                                                    <option value="ID" >Idaho</option>
+                                                    <option value="IL" >Illinois</option>
+                                                    <option value="IN" >Indiana</option>
+                                                    <option value="KS" >Kansas</option>
+                                                    <option value="KY" >Kentucky</option>
+                                                    <option value="LA" >Louisiana</option>
+                                                    <option value="MA" >Massachusetts</option>
+                                                    <option value="MD" >Maryland</option>
+                                                    <option value="ME" >Maine</option>
+                                                    <option value="MI" >Michigan</option>
+                                                    <option value="MN" >Minnesota</option>
+                                                    <option value="MO" >Missouri</option>
+                                                    <option value="MP" >Northern Mariana Islands</option>
+                                                    <option value="MS" >Mississippi</option>
+                                                    <option value="MT" >Montana</option>
+                                                    <option value="NC" >North Carolina</option>
+                                                    <option value="ND" >North Dakota</option>
+                                                    <option value="NE" >Nebraska</option>
+                                                    <option value="NH" >New Hampshire</option>
+                                                    <option value="NJ" >New Jersey</option>
+                                                    <option value="NM" >New Mexico</option>
+                                                    <option value="NV" >Nevada</option>
+                                                    <option value="NY" >New York</option>
+                                                    <option value="OH" >Ohio</option>
+                                                    <option value="OK" >Oklahoma</option>
+                                                    <option value="OR" >Oregon</option>
+                                                    <option value="PA" >Pennsylvania</option>
+                                                    <option value="PR" >Puerto Rico</option>
+                                                    <option value="RI" >Rhode Island</option>
+                                                    <option value="SC" >South Carolina</option>
+                                                    <option value="SD" >South Dakota</option>
+                                                    <option value="TN" >Tennessee</option>
+                                                    <option value="TX" >Texas</option>
+                                                    <option value="UM" >United States Minor Outlying Islands</option>
+                                                    <option value="UT" >Utah</option>
+                                                    <option value="VA" >Virginia</option>
+                                                    <option value="VI" >Virgin Islands, U.S.</option>
+                                                    <option value="VT" >Vermont</option>
+                                                    <option value="WA" >Washington</option>
+                                                    <option value="WI" >Wisconsin</option>
+                                                    <option value="WV" >West Virginia</option>
+                                                    <option value="WY" >Wyoming</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="business_zip" class="form-control-label">Zipcode</label>
+                                                <input type="text" id="business_zip" name="business_zip" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="business_county" class="form-control-label">County</label>
+                                                <input type="text" id="business_county" name="business_county" value="" required class="form-control input-lg" data-minlength="2">
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="mt-5">
+                                                    <label class="form-check-label mt-2">
+                                                        <input class="form-check-input" type="checkbox" name="mailing_address_diff"  id="mailing_address_diff" value="1"> Different Mailing Address?
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 d-none" id="mailing_address_toggle">
+                                <div class="card-header">Mailing Address</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="mailing_address" class="form-control-label">Address</label>
+                                                <input type="text" id="mailing_address" value="" name="mailing_address" class="form-control input-lg">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mailing_city" class="form-control-label">City</label>
+                                                <input type="text" id="mailing_city" value="" name="mailing_city" class="form-control input-lg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="mailing_state" class="form-control-label">State</label>
+                                                <select name="mailing_state" id="mailing_state" class="form-control input-lg">
+                                                    <option value="" selected="selected">Select a State</option>
+                                                    <option value="AA" >Armed Forces Americas</option>
+                                                    <option value="AE" >Armed Forces Europe</option>
+                                                    <option value="AK" >Alaska</option>
+                                                    <option value="AL" >Alabama</option>
+                                                    <option value="AP" >Armed Forces Pacific</option>
+                                                    <option value="AR" >Arkansas</option>
+                                                    <option value="AS" >American Samoa</option>
+                                                    <option value="AZ" >Arizona</option>
+                                                    <option value="CA" >California</option>
+                                                    <option value="CO" >Colorado</option>
+                                                    <option value="CT" >Connecticut</option>
+                                                    <option value="DC" >District of Columbia</option>
+                                                    <option value="DE" >Delaware</option>
+                                                    <option value="FL" >Florida</option>
+                                                    <option value="GA" >Georgia</option>
+                                                    <option value="GU" >Guam</option>
+                                                    <option value="HI" >Hawaii</option>
+                                                    <option value="IA" >Iowa</option>
+                                                    <option value="ID" >Idaho</option>
+                                                    <option value="IL" >Illinois</option>
+                                                    <option value="IN" >Indiana</option>
+                                                    <option value="KS" >Kansas</option>
+                                                    <option value="KY" >Kentucky</option>
+                                                    <option value="LA" >Louisiana</option>
+                                                    <option value="MA" >Massachusetts</option>
+                                                    <option value="MD" >Maryland</option>
+                                                    <option value="ME" >Maine</option>
+                                                    <option value="MI" >Michigan</option>
+                                                    <option value="MN" >Minnesota</option>
+                                                    <option value="MO" >Missouri</option>
+                                                    <option value="MP" >Northern Mariana Islands</option>
+                                                    <option value="MS" >Mississippi</option>
+                                                    <option value="MT" >Montana</option>
+                                                    <option value="NC" >North Carolina</option>
+                                                    <option value="ND" >North Dakota</option>
+                                                    <option value="NE" >Nebraska</option>
+                                                    <option value="NH" >New Hampshire</option>
+                                                    <option value="NJ" >New Jersey</option>
+                                                    <option value="NM" >New Mexico</option>
+                                                    <option value="NV" >Nevada</option>
+                                                    <option value="NY" >New York</option>
+                                                    <option value="OH" >Ohio</option>
+                                                    <option value="OK" >Oklahoma</option>
+                                                    <option value="OR" >Oregon</option>
+                                                    <option value="PA" >Pennsylvania</option>
+                                                    <option value="PR" >Puerto Rico</option>
+                                                    <option value="RI" >Rhode Island</option>
+                                                    <option value="SC" >South Carolina</option>
+                                                    <option value="SD" >South Dakota</option>
+                                                    <option value="TN" >Tennessee</option>
+                                                    <option value="TX" >Texas</option>
+                                                    <option value="UM" >United States Minor Outlying Islands</option>
+                                                    <option value="UT" >Utah</option>
+                                                    <option value="VA" >Virginia</option>
+                                                    <option value="VI" >Virgin Islands, U.S.</option>
+                                                    <option value="VT" >Vermont</option>
+                                                    <option value="WA" >Washington</option>
+                                                    <option value="WI" >Wisconsin</option>
+                                                    <option value="WV" >West Virginia</option>
+                                                    <option value="WY" >Wyoming</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mailing_zip" class="form-control-label">Zipcode</label>
+                                                <input type="text" id="mailing_zip" value="" name="mailing_zip" class="form-control input-lg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-header">Basic information about your Business</div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="business_apply_reason" class="form-control-label">Reason for Applying</label>
+                                                <select required name="business_apply_reason" id="business_apply_reason" class="form-control input-lg">
+                                                    <option value="">Please Select</option>
+                                                    <option value="started_business" selected>Started New Business</option>
+                                                    <option value="hired_employees" >Hired Employees</option>
+                                                    <option value="irs_compliance">IRS Compliance</option>
+                                                    <option value="created_trust">Created Trust</option>
+                                                    <option value="banking_purposes">Banking Purposes</option>
+                                                    <option value="changed_organization">Changed Type of Organization</option>
+                                                    <option value="purchased_business">Purchased Business</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="business_activity" class="form-control-label">Primary Activity</label>
+                                                <select required name="business_activity" id="business_activity" class="form-control input-lg">
+                                                    <option value="">Please Select</option>
+                                                    <option value="construction" >Construction</option>
+                                                    <option value="real_estate" >Real Estate</option>
+                                                    <option value="rental_leasing" >Rental &amp; Leasing</option>
+                                                    <option value="manufacturing" >Manufacturing</option>
+                                                    <option value="transportation" >Transportation & warehousing</option>
+                                                    <option value="finance" >Finance & Insurance</option>
+                                                    <option value="social_assistance" >Health Care &amp; Social Assistance</option>
+                                                    <option value="accommodation" >Accommodation &amp; Food Service</option>
+                                                    <option value="wholesale_agent" selected>Wholesale-agent/Broker</option>
+                                                    <option value="wholesale_other" >Wholesale-Other</option>
+                                                    <option value="retail" >Retail</option>
+                                                    <option value="other" >Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="business_activity_other" class="form-control-label">Specific Products or Services</label>
+                                                <input type="text" id="business_activity_other" value="" name="business_activity_other" class="form-control input-lg" required data-minlength="2">
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input"  id="heavy_vehicles" name="heavy_vehicles" type="checkbox" value="1">
+                                                    Does the business own a highway motor vehicle weighing 55,000 pounds or more?
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="gambling" name="gambling" type="checkbox" value="1" >
+                                                    Does the business involve gambling?
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="atf" name="atf" type="checkbox" value="1" >
+                                                    Does the business sell or manufacture alcohol, tobacco, or firearms?
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="excise" name="excise" type="checkbox" value="1" >
+                                                    Does your business pay federal excise taxes?
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="business_applied_before" name="business_applied_before" type="checkbox" value="1" >
+                                                    Has this entity applied for an EIN before?
+                                                </label>
+                                            </div>
+                                            <div id="business_applied_before_toggle" class="mt-2 d-none">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="business_previous_ein" class="control-label">Previous Federal Tax ID</label>
+                                                        <input type="text" id="business_previous_ein" name="business_previous_ein" value="" class="form-control input-lg taxid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="business_annual_taxes" name="business_annual_taxes" type="checkbox" value="true" >
+                                                    If you expect to pay less than $4,000 in wages over the next calendar year, do you wish to file annual instead of quarterly taxes?
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" id="business_hire_employees" name="business_hire_employees" type="checkbox" value="1" >
+                                                    Do you already have or expect to hire an employee within 12 months, excluding owners?
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="business_hire_employees_toggle" class="card bg-light mt-2 d-none">
+                                        <div class="card-header">Please describe your use of employees</div>
+                                        <div class="card-body" style="padding-bottom:0">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="form-group col-md-6">
+                                                    <label for="business_wages_start_month" class="form-control-label">Date of first wage payment</label>
+                                                    <div class="form-row">
+                                                        <div class="col-md-4">
+                                                            <select id="business_wages_start_month" name="business_wages_start_month" class="form-control">
+                                                                <option value="1" selected>Jan</option>
+                                                                <option value="2">Feb</option>
+                                                                <option value="3">Mar</option>
+                                                                <option value="4">Apr</option>
+                                                                <option value="5">May</option>
+                                                                <option value="6">Jun</option>
+                                                                <option value="7">Jul</option>
+                                                                <option value="8">Aug</option>
+                                                                <option value="9">Sep</option>
+                                                                <option value="10">Oct</option>
+                                                                <option value="11">Nov</option>
+                                                                <option value="12">Dec</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <select id="business_wages_start_day" name="business_wages_start_day" class="form-control">
+                                                                <option value="1" selected>1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30</option>
+                                                                <option value="31">31</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <select id="business_wages_start_year" name="business_wages_start_year" class="form-control">
+                                                                <option value="2021">2021</option>
+                                                                <option value="2020" selected>2020</option>
+                                                                <option value="2019">2019</option>
+                                                                <option value="2018">2018</option>
+                                                                <option value="2017">2017</option>
+                                                                <option value="2016">2016</option>
+                                                                <option value="2015">2015</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2012">2012</option>
+                                                                <option value="2011">2011</option>
+                                                                <option value="2010">2010</option>
+                                                                <option value="2009">2009</option>
+                                                                <option value="2008">2008</option>
+                                                                <option value="2007">2007</option>
+                                                                <option value="2006">2006</option>
+                                                                <option value="2005">2005</option>
+                                                                <option value="2004">2004</option>
+                                                                <option value="2003">2003</option>
+                                                                <option value="2002">2002</option>
+                                                                <option value="2001">2001</option>
+                                                                <option value="2000">2000</option>
+                                                                <option value="1999">1999</option>
+                                                                <option value="1998">1998</option>
+                                                                <option value="1997">1997</option>
+                                                                <option value="1996">1996</option>
+                                                                <option value="1995">1995</option>
+                                                                <option value="1994">1994</option>
+                                                                <option value="1993">1993</option>
+                                                                <option value="1992">1992</option>
+                                                                <option value="1991">1991</option>
+                                                                <option value="1990">1990</option>
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <input placeholder="# of Agricultural Employees" type="text" id="business_employees_agricultural" name="business_employees_agricultural" value="0" class="mb-2 form-control">
+                                                    <input placeholder="# of Household Employees"type="text" id="business_employees_household" name="business_employees_household" value="0" class="mb-2 form-control">
+                                                    <input placeholder="# of Other Employees"type="text" id="business_employees_other" name="business_employees_other" value="0" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-group">
+                                <div class="card">
+                                    <div class="card-header">Dates</div>
+                                    <div class="card-body">
+                                        <label for="business_date_start_month" class="form-control-label">Date business acquired</label>
+                                        <div class="form-group">
+                                            <div class="form-row">
+                                                <div class="col-md-4">
+                                                    <select id="business_date_start_month" name="business_date_start_month" class="form-control">
+                                                        <option value="1" selected>Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jul</option>
+                                                        <option value="8">Aug</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Oct</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Dec</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select id="business_date_start_day" name="business_date_start_day" class="form-control">
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select id="business_date_start_year" name="business_date_start_year" class="form-control">
+                                                        <option value="2021">2021</option>
+                                                        <option value="2020" selected>2020</option>
+                                                        <option value="2019">2019</option>
+                                                        <option value="2018">2018</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2016">2016</option>
+                                                        <option value="2015">2015</option>
+                                                        <option value="2014">2014</option>
+                                                        <option value="2013">2013</option>
+                                                        <option value="2012">2012</option>
+                                                        <option value="2011">2011</option>
+                                                        <option value="2010">2010</option>
+                                                        <option value="2009">2009</option>
+                                                        <option value="2008">2008</option>
+                                                        <option value="2007">2007</option>
+                                                        <option value="2006">2006</option>
+                                                        <option value="2005">2005</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1992">1992</option>
+                                                        <option value="1991">1991</option>
+                                                        <option value="1990">1990</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="business_wages_start_month" class="form-control-label">Accounting Year End</label>
+                                            <select id="business_closing_month" name="business_closing_month" class="form-control">
+                                                <option value="1" selected>January</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">Authorization</div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="customer_contact_phone" class="form-control-label">Telephone Number</label>
+                                            <input type="tel" id="customer_contact_phone" name="customer_contact_phone" class="form-control phone" value="" required data-minlength="10">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="customer_contact_email" class="form-control-label">Email Address</label>
+                                            <input type="email" id="customer_contact_email" name="customer_contact_email" value="" required class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-body text-center mb-0">
+                                    <div class="form-group">
+                                        <input class="form-check-input" name="customer_agreement" id="customer_agreement" type="hidden" value="true">
+                                        <button type="submit" id="submit" name="submit" class="btn btn-primary btn-block mb-3">Submit Application</button>
+                                        <small class="text-muted">Clicking on "Submit Application" means you agree to our Terms of Service and Privacy Policy.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer class="py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 footer-nav">
+                        <ul class="navbar-nav flex-row justify-content-center">
+                            <li class="mx-3"><a href="terms-and-conditions.html" class="text-light">Terms & Conditions</a></li>
+                            <li class="mx-3"><a href="privacy-policy.html" class="text-light">Privacy Policy</a></li>
+                            <li class="mx-3"><a href="contact.html" class="text-light">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="copyright col-12 text-center mt-4">
+                        <p class="mb-0 text-light">Copyright ©​ 2016-2020, IRS Tax EIN</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+    </.html>
